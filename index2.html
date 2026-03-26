@@ -1,0 +1,2999 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <title>Novabiz</title>
+    <style>
+  
+  
+@font-face {
+  font-family: 'Proxima Nova'; /* A name you define for the font */
+  src: url('https://cdn.jsdelivr.net/gh/vijayvemul14/fonts/Proxima-Nova-Regular.otf') format('opentype');
+       
+  font-weight: 400;
+  font-style: regular;
+  font-display: swap; /* Defines how the font loads and displays */
+}
+
+
+@font-face {
+  font-family: 'Proxima Nova'; /* A name you define for the font */
+  src: url('https://cdn.jsdelivr.net/gh/vijayvemul14/fonts/Proxima-Nova-Semibold.otf') format('opentype');
+       
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; /* Defines how the font loads and displays */
+}
+
+
+@font-face {
+  font-family: 'Proxima Nova'; /* A name you define for the font */
+  src: url('https://cdn.jsdelivr.net/gh/vijayvemul14/fonts/Proxima-Nova-Bold.otf') format('opentype');
+       
+  font-weight: 700;
+  font-style: regular;
+  font-display: swap; /* Defines how the font loads and displays */
+}
+
+@font-face {
+  font-family: 'Proxima Nova'; /* A name you define for the font */
+  src: url('https://cdn.jsdelivr.net/gh/vijayvemul14/fonts/Proxima-Nova-Thin.otf') format('opentype');
+       
+  font-weight: 300;
+  font-style: regular;
+  font-display: swap; /* Defines how the font loads and displays */
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+/******************** Header *********************/
+
+.site-header {
+  width: 100%;
+  box-shadow: 0px 4px 20.6px 0px #BBBBBB40;
+
+}
+
+.header-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+/*.email-btn {
+  font-family: 'Proxima Nova', sans-serif;;
+  color: white;
+  text-decoration: none;
+  width: 113px;
+  height: 32px;
+  display: inline-block;
+  gap: 10px;
+  opacity: 1;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 12px;
+  background: linear-gradient(103.23deg, #466BAE 0%, #A0C3FF 100%);
+}*/
+
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  padding: 0 20px;
+
+  border-radius: 10px;
+  background: linear-gradient(103.23deg, #466BAE 0%, #A0C3FF 100%);
+  color: #fff;
+
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  body{
+    margin: 0px;
+  }
+  .logo img {
+    max-width: 98px;
+  }
+
+  .site-header .email-btn {
+    font-weight: 700;
+  }
+}
+
+/********************* Hero Banner ************************/
+
+
+.hero {
+  position: relative;
+  background: url("https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11ny/1101212/1773747696k70oAn5E/hero_banner.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 650px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(255 255 255 / 93%); /* opacity here */
+  z-index: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+section.hero a {
+    top: 30px;
+}
+
+.hero {
+  padding: 50px 50px 0px 50px;
+  /* background-image: url(assets/hero_banner.jpeg); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 42px; */
+  
+}
+
+.hero-container {
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Content */
+.hero-content h1 {
+  font-family: Proxima Nova;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #56595E;
+  margin-bottom: 20px;
+
+}
+
+.hero-content h1 span {
+  font-family: Proxima Nova;
+  font-weight: 700; 
+  font-style: Regular;
+  font-size: 80px;
+  line-height: 83%;
+  letter-spacing: 0%;
+  color: #466BAE;
+
+
+}
+
+.hero-content p {
+  font-family: Proxima Nova;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0%;
+  color: #7F7F7F;
+  margin-top: 0px;
+
+}
+
+.partner-badge img {
+  max-width: 180px;
+}
+
+/* Form Card */
+.hero-form {
+  width: 100%;
+  /* height: 629px; */
+  gap: 30px; 
+  opacity: 1;
+  padding: 20px;
+  border-width: 3px;
+  box-shadow: 0px 4px 7.1px 0px #8383831C;
+  border-radius: 14px;
+  border: 3px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(145.29deg, rgba(70, 107, 174, 0.21) 4.85%, #4B71B1 88.25%) border-box;
+ box-sizing: border-box;
+
+}
+
+.hero-form h3 {
+  color: #656565;  
+  font-family: Proxima Nova;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  
+
+}
+
+.hero-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 0px !important;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.hero-form input,
+.hero-form textarea,
+.hero-form select {
+  font-family: Proxima Nova;
+  font-weight: 400;
+  font-size: 16px;
+  border: 1px solid #979797;
+  width: auto;
+  height: 45px;
+  gap: 10px;
+  opacity: 1;
+  padding: 16px;
+  border-radius: 12px;
+  border-width: 1px;
+  box-sizing: border-box;
+
+}
+
+form.form input.text {
+  width: 100% !important;
+}
+
+form.form textarea.standard,
+.hero-form select {
+  width: 100% !important;
+  
+}
+
+.hero-form select {
+  height: 45px !important;
+  padding: 12px !important;
+}
+
+form.form p label {
+  color: #706a6a !important;
+  text-align: left !important;
+  width: auto !important;
+  font-weight: 100 !important;
+  padding-bottom: 5px !important;
+}
+
+.hero-form input::placeholder,
+.hero-form textarea::placeholder,
+.hero-form select::placeholder {
+    color: #979797;
+}
+
+.hero-form textarea {
+  resize: vertical;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+
+select {
+  color: #979797; /* placeholder color */
+}
+
+select:valid {
+  color: #111; /* normal text color */
+}
+
+.hero-form select {
+  height: 100%;
+}
+
+#salesforce-toggle {
+  width: 100%;  
+}
+
+.Existing_Salesforce_Setup,
+.Message {
+  grid-column: span 3; 
+}
+
+
+/* Button */
+
+form.form p.submit {
+  width: 100% !important;
+  margin: 0px !important;
+  grid-column: span 3  ;
+}
+form.form p.submit input {
+  
+  color: #fff;
+  background: linear-gradient(103.23deg, #466BAE 0%, #A0C3FF 100%);
+  width: 100%;
+  height: 45px;
+  gap: 10px;
+  opacity: 1;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 12px;
+  border: transparent;
+  cursor: pointer;
+
+
+font-family: Proxima Nova;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+
+
+
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.bounce-btn img {
+  width: 30px;
+}
+
+.bounce-btn {
+  animation: bounce 1.1s infinite ease-in-out;
+}
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+
+  .hero-form select {
+  height: 55px;
+}
+  .hero {
+    padding: 20px 20px;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  section.hero a {
+    top: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .hero-content h1 span {
+    font-size: 46px;
+    
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #7F7F7F;
+    font-weight: 500;
+  }
+
+  .hero-form h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .hero-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 26px;
+  }
+}
+
+
+/*************** Why Sensible Matters  ******************/
+
+.about-section {
+  padding: 50px 50px;
+  padding-top: 0px;
+  background: #ffffff;
+}
+
+.about-container {
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 100px;
+  align-items: center;
+  padding-top: 50px;
+}
+
+/* Left Content */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-content h2 {
+  color: #4367AA;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 89%;
+  margin-bottom: 0px;
+  
+}
+
+.about-content p {
+  font-size: 24px;
+  line-height: 28px;
+  color: #0E283B;
+  font-weight: 400;
+  margin: 0px;
+
+}
+
+.schedule_consultation {
+  width: 335px;
+    height: 55px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    background: linear-gradient(103.23deg, #466BAE 0%, #A0C3FF 100%);
+    color: #ffffff;
+    font-family: Proxima Nova;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+/* Right Side */
+
+.approach-wrapper {
+  width: 100%;
+  height: 561px;
+}
+
+.approach-wrapper h3 {
+  text-align: center;
+  color: #0E283B;
+  font-family: Proxima Nova;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+.approach-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+  background: #f9fcff;
+  margin-bottom: 20px;
+  border-width: 1px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background: linear-gradient(#F6F9FC, #F6F9FC) padding-box, linear-gradient(148.03deg, rgba(125, 187, 220, 0.25) 1.16%, #4B71B1 89.26%) border-box;
+  box-sizing: border-box;
+
+
+}
+
+.approach-card .icon {
+  width: 71px;
+  height: 71px;
+  background: #E2ECFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background: linear-gradient(#E2ECFF, #E2ECFF) padding-box, linear-gradient(148.03deg, rgba(125, 187, 220, 0.25) 1.16%, #4B71B1 89.26%) border-box;
+  box-sizing: border-box;
+}
+
+.approach-card .icon img {
+  width: 41px;
+}
+
+.approach-card h4 {
+  margin: 0;
+  color: #3b67b1;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.approach-card p {
+  margin: 4px 0 0;
+  font-size: 24px;
+  color: #5a6b7b;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-wrapper h3 {
+    text-align: left;
+    font-size: 21px;
+  }
+
+  .approach-card h4 {
+    font-size: 14px;
+  }
+
+  .approach-card p {
+    font-size: 14px;
+  }
+
+  .approach-card {
+    padding: 14px;
+    gap: 10px;
+
+  }
+
+  .approach-card .text {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .approach-card p {
+    margin: 0px;
+  }
+   
+  .approach-wrapper {
+    height: 100%;
+  }
+
+  .approach-card .icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .approach-card .icon img {
+    width: 20px;
+  }
+
+  .about-section {
+    padding: 20px 30px;
+  }
+
+  .about-content h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .about-content {
+    gap: 24px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .schedule_consultation {
+    width: 100%;
+    height: 43px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: Proxima Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    
+
+  }
+
+  .about-container {
+    gap: 24px;
+  }
+}
+
+
+/************* Experience Section  ******************/
+
+.experience-section {
+  background: #F6F9FC;
+  padding: 50px 50px;
+  
+}
+
+.experience-container {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.experience-container h2 {
+  font-size: 40px;
+  color: #4367AA;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.experience-desc {
+  margin: 0 auto 40px;
+  font-size: 21px;
+  color: #4a5b6b;
+  line-height: 26px;
+  font-weight: 400;
+
+}
+
+/* Grid */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 50px;
+
+}
+
+/* Card */
+.exp-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(148.03deg, rgba(125, 187, 220, 0.25) 1.16%, #4B71B1 89.26%) border-box;
+  box-sizing: border-box;
+  /* height: 268px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+
+}
+
+.exp-card .icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-card .icon img {
+  width: 70px;
+}
+
+.exp-card h3 {
+  font-size: 28px;
+  color: #4367AA;
+  line-height: 32px;
+  font-weight: 700;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+/* Button */
+.experience-btn {
+   width: 335px;
+    height: 55px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    background: linear-gradient(103.23deg, #466BAE 0%, #A0C3FF 100%);
+    color: #ffffff;
+    font-family: Proxima Nova;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    text-decoration: none;
+
+
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-section {
+    padding: 50px 30px;
+  }
+
+  .experience-container h2 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 48px;
+  }
+
+  .experience-desc {
+    font-family: Proxima Nova;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .exp-card {
+    padding: 20px 10px;
+    height: 100%;
+
+  }
+
+  .exp-card .icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .exp-card .icon img {
+    width: 52px;
+  }
+
+  .exp-card h3 {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+
+  .experience-btn {
+    display: block;
+        padding: 12px;
+        font-size: 18px;
+        height: 43px;
+        width: 100%;
+        box-sizing: border-box;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience-container h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+
+/********* Tech Expertise  ****************/
+
+.tech-expertise {
+  padding: 50px 50px;
+  background: #ffffff;
+}
+
+.tech-container {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.tech-container h2 {
+  font-size: 40px;
+  color: #4367AA;
+  margin: 0px;
+  font-weight: 700;
+
+}
+
+.tech-subtitle {
+  font-size: 30px;
+  color: #4a5b6b;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px 20px;
+  padding-top: 30px;
+}
+
+/* Item */
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  font-size: 22px;
+  color: #0E283B;
+  line-height: 26px;
+}
+
+.tech-item img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .tech-expertise {
+    padding: 40px 30px;
+  }
+  .tech-container h2 {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 48px;
+  }
+
+  .tech-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    width: 300px;
+  }
+
+  .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tech-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tech-item span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .tech-item {
+    gap: 20px;
+  }
+}
+
+
+
+
+
+/**************  Integration Section *****************/
+
+
+.integration-section {
+  padding: 50px 50px;
+  background: #ffffff;
+}
+
+.integration-container {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.integration-container h2 {
+  font-size: 40px;
+  color: #4367AA;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.integration-subtitle {
+  font-size: 30px;
+  color: #4a5b6b;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+/* Grid */
+.integration-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+/* Logo Item */
+.integration-item img {
+  max-width: 160px;
+  max-height: 48px;
+  object-fit: contain;
+}
+
+/* Button */
+.integration-btn {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4367AA;
+  text-decoration: none;
+  width: 253px;
+  height: 55px;
+  gap: 10px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid #4367AA;
+  box-sizing: border-box;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Responsive */
+
+
+@media (max-width: 767px) {
+  .integration-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .integration-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .integration-section {
+    padding: 40px 30px;
+  }
+
+  .integration-container h2 {
+    font-size: 40px;
+    text-align: left;
+    line-height: 48px;
+  }
+
+  .integration-subtitle {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .integration-item img {
+    max-width: 100px;
+  }
+
+  .integration-item.alignment-class {
+    display: none;
+}
+
+  .integration-btn {
+    padding: 12px;
+        font-size: 16px;
+        height: 43px;
+        width: 100%;
+  }
+
+  
+}
+
+
+/******************* Our Global Customers ********************/
+
+.customers-section {
+  padding: 50px 50px;
+  max-width: 100%;
+  background: #f8fbff;
+  text-align: center;
+}
+
+.customers-section .section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #4367AA;
+  margin-bottom: 50px;
+  font-family: Proxima Nova;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  line-height: 89%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 70px;
+
+}
+
+.customers-section .customer-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.customers-section .category {
+  color: #4467b1;
+  position: relative;
+  padding-bottom: 6px;
+  font-family: Proxima Nova;
+  font-weight: 600;
+  font-style: Semibold;
+  font-size: 20px;
+  line-height: 89%;
+  letter-spacing: 0%;
+  text-align: center;
+  
+
+}
+
+.customers-section .category::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #4367AA;
+  display: block;
+  margin: 23px auto 0;
+}
+
+.customers-section .customer-group img {
+  max-width: 180px;
+  object-fit: contain;
+
+}
+
+
+
+/* Dots */
+.customers-section .glide__bullets,
+#industrySlider .glide__bullets {
+  margin-top: 35px;
+} 
+
+.customers-section .glide__bullet,
+#industrySlider .glide__bullet {
+  width: 72px;
+  height: 10px;
+  border-radius: 4px;
+  background: white;
+  margin: 0 4px;
+  border-color: white;
+  cursor: pointer;
+}
+
+.customers-section .glide__bullet--active,
+#industrySlider .glide__bullet--active{
+  background: #4367AA;
+}
+
+
+@media (max-width: 1024px) {
+
+  .customers-section .customer-group {
+    height: 100%;
+  }
+
+  .customers-section {
+    padding: 40px 30px;
+  }
+
+  .customers-section .section-title {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+
+
+}
+
+
+/********************** Ways to engage  *************8*/
+
+.engage-section {
+  padding: 50px 50px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.engage-section .container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.engage-section .section-title {
+  font-size: 40px;
+  color: #4367AA;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-weight: 700;
+}
+
+.engage-section .section-subtitle {
+  margin: 0 auto 45px;
+  color: #0E283B;
+  font-size: 21px;
+  line-height: 100%;
+  font-weight: 400;
+  max-width: 1180px;
+  line-height: 26px;
+
+}
+
+/* Grid */
+.engage-section .engage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card */
+.engage-section .engage-card {
+  background: #ffffff;
+  border: 1px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(148.03deg, rgba(125, 187, 220, 0.25) 1.16%, #4B71B1 89.26%) border-box;
+  box-shadow: 0px 4px 13px 0px #CECECE40;
+  gap: 20px;
+  opacity: 1;
+  border-radius: 14px;
+  border-width: 1px;
+  padding: 30px;
+
+
+
+
+}
+
+.engage-section .engage-card:hover {
+  box-shadow: 0 12px 30px rgba(68, 103, 177, 0.15);
+  transform: translateY(-4px);
+}
+
+.engage-section .icon-box {
+  width: 60px;
+  height: 60px;
+  background: #4467b1;
+  color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  font-size: 24px;
+}
+
+.engage-section .engage-card h3 {
+ 
+  color: #4367AA;
+  font-family: Proxima Nova;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+/* CTA */
+.engage-section .cta-wrapper {
+  margin-top: 50px;
+}
+
+.engage-section .cta-btn {
+  width: 335px;
+    height: 55px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    background: linear-gradient(103.23deg, #466BAE 0%, #A0C3FF 100%);
+    color: #ffffff;
+    font-family: Proxima Nova;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    text-decoration: none;
+
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .engage-section .engage-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 20px;
+  }
+
+  .engage-section {
+    padding: 20px 30px;
+  }
+
+  .engage-section .section-title {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 48px;
+  }
+
+  .engage-section .section-subtitle {
+    font-size: 18px;
+    text-align: left;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .engage-section .engage-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .engage-section .engage-card {
+    padding: 40px 10px;
+  }
+
+  .engage-section .engage-card h3 {
+    font-size: 20px;
+  }
+
+  .engage-section .cta-btn {
+    display: block;
+    padding: 12px;
+    font-size: 18px;
+    height: 43px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.engage-section .cta-wrapper {
+  margin-top: 30px;
+}
+}
+
+
+
+
+/*************  Industries  ***********************/
+
+div#industrySlider {
+    display: none;
+}
+
+.delivery-section {
+  position: relative;
+  background: url("https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11mc/1101212/1773747693CeQvTZz8/banner_hero.png") center / contain no-repeat;
+}
+
+.delivery-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(246 249 252/ 93%); /* opacity here */
+  z-index: 0;
+}
+
+.delivery-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.delivery-section {
+  padding: 50px 50px;
+  /* background: #F6F9FC; */
+}
+
+.delivery-container {
+  max-width: 1266px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.delivery-container h2 {
+  font-size: 40px;
+  color: #4367AA;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.delivery-desc {
+  margin: 0 auto 40px;
+  font-size: 21px;
+  color: #0E283B;
+  line-height: 100%;
+  line-height: 26px;
+}
+
+/* Card */
+.delivery-card {
+
+  background: #fff;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 108px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  border-width: 1px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(148.03deg, rgba(125, 187, 220, 0.25) 1.16%, #4B71B1 89.26%) border-box;
+  box-shadow: 0px 4px 13px 0px #CECECE40;
+  box-sizing: border-box;
+
+
+
+}
+
+.delivery-item h4 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #4367AA;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.delivery-item p {
+  font-size: 18px;
+  color: #0E283B;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Industries */
+.industries h3 {
+  font-size: 40px;
+  color: #4367AA;
+  margin-bottom: 0px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.industries p {
+  font-size: 28px;
+  color: #000000;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: 400;
+
+}
+
+.industry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.industry-tags span {
+  background: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4367AA;
+  border: 1px solid transparent;
+  border-width: 1px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(148.03deg, rgba(125, 187, 220, 0.25) 1.16%, #4B71B1 89.26%) border-box;
+  height: 71px;
+  gap: 10px;
+  opacity: 1;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-radius: 53px;
+  box-sizing: border-box;
+
+
+}
+
+/* Button */
+.delivery-btn {
+   width: 335px;
+    height: 55px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    background: linear-gradient(103.23deg, #466BAE 0%, #A0C3FF 100%);
+    color: #ffffff;
+    font-family: Proxima Nova;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    text-decoration: none;
+
+}
+
+
+/* Responsive */
+@media (max-width:768px) {
+  div#industrySlider {
+    display: block;
+}
+}
+
+@media (max-width: 900px) {
+  .delivery-card {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+    gap: 30px;
+  }
+
+  .delivery-container h2 {
+    font-size: 40px;
+    text-align: left;
+    line-height: 48px;
+  }
+
+  .delivery-section {
+    padding: 50px 30px;
+  }
+
+  .delivery-desc {
+    font-size: 18px;
+    text-align: left;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+
+  .delivery-item h4 {
+    margin-top: 0px;
+    font-size: 22px;
+  }
+
+  .delivery-item p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+}
+
+
+/*  Slider */
+
+@media (max-width:767px) {
+  .industry-tags {
+    display: none;
+}
+}
+
+/* Desktop layout */
+@media (min-width: 769px) {
+  .industry-tags .glide__slides {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .industry-tags .glide__slide {
+    width: auto !important;
+  }
+}
+
+/* Mobile slider spacing */
+@media (max-width: 768px) {
+  .industry-tags .glide__slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+
+
+/********** Outcomes section  *************/
+
+.outcomes-section {
+  padding: 50px 50px;
+  background: #ffffff;
+ 
+}
+
+.outcomes-container {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.outcomes-container h2 {
+  font-size: 40px;
+  color: #4367AA;
+  margin-bottom: 0px;
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+.outcomes-subtitle {
+  font-size: 21px;
+  color: #0E283B;
+  line-height: 26px;
+  margin-bottom: 45px;
+  margin-top: 10px;
+
+}
+
+/* Grid */
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.outcome-card {
+  background: #ffffff;
+  text-align: left;
+  border: 1px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(148.03deg, rgba(125, 187, 220, 0.25) 1.16%, #4B71B1 89.26%) border-box;
+  box-shadow: 0px 4px 13px 0px #CECECE40;
+  gap: 20px;
+  opacity: 1;
+  border-radius: 14px;
+  border-width: 1px;
+  padding: 40px;
+  box-sizing: border-box;
+
+}
+
+.outcome-card .icon {
+  width: 89px;
+  height: 89px;
+  margin-bottom: 14px;
+}
+
+.outcome-card .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.outcome-card p {
+  font-size: 24px;
+  color: #0E283B;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.outcome-card strong {
+  color: #4367AA;
+  font-weight: 700;
+}
+
+/* Footer text */
+.outcomes-footer {
+  font-size: 21px;
+  color: #4367AA;
+  margin-top: 10px;
+  line-height: 30px;
+  width: 722px;
+  margin: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+  .outcomes-section {
+    padding: 40px 30px;
+  }
+  .outcomes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outcomes-container h2 {
+    font-size: 40px;
+    text-align: left;
+    line-height: 48px;
+  }
+
+  .outcomes-subtitle {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .outcomes-footer {
+    width: 100%;
+  }
+
+  .industries h3 {
+    font-size: 40px;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .industries p {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .industry-tags span {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+  }
+
+  .delivery-btn {
+    display: block;
+    padding: 12px;
+        font-size: 18px;
+        height: 43px;
+        width: 100%;
+        box-sizing: border-box;
+  }
+
+  .outcome-card {
+    padding: 40px 30px;
+  }
+
+  .outcome-card .icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .outcome-card p {
+    font-size: 20px;
+  }
+
+  .outcomes-footer {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .outcomes-section {
+    margin-bottom: 0px;
+  }
+}
+
+
+
+/*************** Salesforce section   ********************/
+
+.salesforce-cta {
+  padding: 90px 70px;
+  background: linear-gradient(148.03deg, #4B71B1 1.16%, #80ADFF 89.26%);
+  color: #ffffff;
+}
+
+.cta-container {
+  max-width: 1046px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.salesforce-cta h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 105%;
+  margin-bottom: 39px;
+  margin-top: 0px;
+}
+
+.cta-subtitle {
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0 auto 24px;
+}
+
+.cta-highlight {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+/* Button */
+/*
+.cta-button {
+  display: inline-block;
+  background: #ffffff;
+  color: #0E283B;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 335px;
+  height: 55px;
+  gap: 10px;
+  opacity: 1;
+  padding-top: 13px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+}*/
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 335px;
+  height: 55px;
+
+  padding: 0 24px;
+  border-radius: 12px;
+
+  background: #ffffff;
+  color: #0E283B;
+
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+
+  text-decoration: none;
+
+  white-space: nowrap; /* 🔥 FIX TEXT BREAK */
+}
+
+hr{
+  border: 0.1px solid #FFFFFF4D;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .salesforce-cta h2 {
+        font-size: 40px;
+        text-align: left;
+        line-height: 45px;
+        
+    }
+
+  .cta-subtitle {
+        font-size: 22px;
+        text-align: left;
+        
+    }
+
+  .salesforce-cta {
+    padding: 80px 40px;
+  }
+
+  .cta-highlight {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    text-align: left;
+}
+
+.salesforce-cta .cta-button {
+    display: block;
+    padding: 12px;
+    font-size: 18px;
+    height: 43px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+}
+
+
+/*************** Footer Section   *****************/
+
+.site-footer {
+  background: #0B1A3C;
+  color: #cbd5f0;
+  padding: 50px 50px;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Top section */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+.footer-col p {
+  font-family: Proxima Nova;
+  font-weight: 300;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+/* LinkedIn */
+.linkedin-icon {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  background: #4367AA;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+}
+
+
+/* Partner badge */
+
+.footer-partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-end; /* 🔥 CHANGE THIS */
+}
+.footer-partner .partner-badge img {
+  max-width: 200px;
+}
+
+.footer-partner .novabiz-badge img {
+  max-width: 200px;
+}
+/* Divider */
+.footer-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 40px 0 40px;
+}
+
+/* Bottom section */
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+  font-family: Proxima Nova;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+color: white;
+
+}
+
+.footer-bottom .footer-note {
+  font-size: 18px;
+  font-weight: 300;
+
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-top {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.footer-col {
+  text-align: left;
+}
+
+  .footer-partner {
+    justify-content: center;
+  }
+
+  .site-footer {
+    padding: 67px 30px;
+  }
+
+  .footer-col {
+    text-align: left;
+    align-items: flex-start;
+  }
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+  .footer-col h4 {
+    font-size: 21px;
+  }
+
+  .footer-col a {
+    font-size: 20px;
+  }
+
+  .footer-bottom p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 22px;
+  }
+
+  .footer-bottom .footer-note {
+    font-size: 12px;
+  }
+}
+</style>
+
+    </style>
+<link rel="stylesheet" type="text/css" href="https://go.marketing-novabiz.co.in/css/form.css?ver=2021-09-20" />
+<script type="text/javascript" src="https://go.marketing-novabiz.co.in/js/piUtils.js?ver=2021-09-20"></script><script type="text/javascript">
+piAId = '1102212';
+piCId = '297701';
+piHostname = 'go.marketing-novabiz.co.in';
+if(!window['pi']) { window['pi'] = {}; } pi = window['pi']; if(!pi['tracker']) { pi['tracker'] = {}; } pi.tracker.pi_form = true;
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script></head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+            <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11kk/1101212/1773742494Jr6Rdqkh/logo.png" alt="Logo">
+            </div>
+
+            <a href="mailto:info@novabiz.co.in" class="email-btn">
+            Email
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-container">
+
+            <!-- Left Content -->
+            <div class="hero-content">
+                <h1>
+                    Salesforce done <span>sensibly</span>
+                </h1>
+
+                <p>
+                    We make Salesforce simple, scalable, and suited to how your business works,
+                    on time, within scope, and easy for your teams to adopt.
+                </p>
+
+                <div class="partner-badge">
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11rk/1101212/1773747702ZrMOOzSl/salesforce_partner.png" alt="Salesforce Partner">
+                </div>
+            </div>
+
+            <!-- Right Form -->
+            <div class="hero-form">
+                <h3>Schedule a Consultation</h3>
+
+               <form accept-charset="UTF-8" method="post" action="https://go.marketing-novabiz.co.in/l/1101212/2025-09-24/ggrg9n" class="form" id="pardot-form">
+
+<style type="text/css">
+form.form p label { color: #000000; }
+</style>
+
+
+
+
+
+	
+		
+
+		
+			<p class="form-field  first_name pd-text required    ">
+				
+					<label class="field-label" for="1101212_461278pi_1101212_461278">First Name</label>
+				
+
+				<input type="text" name="1101212_461278pi_1101212_461278" id="1101212_461278pi_1101212_461278" value="" class="text" size="30" maxlength="40" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_1101212_461278pi_1101212_461278" style="display:none"></div>
+			
+		
+			<p class="form-field  last_name pd-text required    ">
+				
+					<label class="field-label" for="1101212_461281pi_1101212_461281">Last Name</label>
+				
+
+				<input type="text" name="1101212_461281pi_1101212_461281" id="1101212_461281pi_1101212_461281" value="" class="text" size="30" maxlength="80" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_1101212_461281pi_1101212_461281" style="display:none"></div>
+			
+		
+			<p class="form-field  email pd-text required    ">
+				
+					<label class="field-label" for="1101212_461290pi_1101212_461290">Email</label>
+				
+
+				<input type="text" name="1101212_461290pi_1101212_461290" id="1101212_461290pi_1101212_461290" value="" class="text" size="30" maxlength="255" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_1101212_461290pi_1101212_461290" style="display:none"></div>
+			
+		
+			<p class="form-field  phone pd-text     ">
+				
+					<label class="field-label" for="1101212_461305pi_1101212_461305">Phone</label>
+				
+
+				<input type="text" name="1101212_461305pi_1101212_461305" id="1101212_461305pi_1101212_461305" value="" class="text" size="30" maxlength="40" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_1101212_461305pi_1101212_461305" style="display:none"></div>
+			
+		
+			<p class="form-field  company pd-text required    ">
+				
+					<label class="field-label" for="1101212_461287pi_1101212_461287">Company</label>
+				
+
+				<input type="text" name="1101212_461287pi_1101212_461287" id="1101212_461287pi_1101212_461287" value="" class="text" size="30" maxlength="255" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_1101212_461287pi_1101212_461287" style="display:none"></div>
+			
+		
+			<p class="form-field  job_title pd-text     ">
+				
+					<label class="field-label" for="1101212_461284pi_1101212_461284">Job Title</label>
+				
+
+				<input type="text" name="1101212_461284pi_1101212_461284" id="1101212_461284pi_1101212_461284" value="" class="text" size="30" maxlength="128" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_1101212_461284pi_1101212_461284" style="display:none"></div>
+			
+		
+			<p class="form-field  Existing_Salesforce_Setup pd-select required    ">
+				
+					<label class="field-label" for="1101212_461296pi_1101212_461296">Do you Use Salesforce?</label>
+				
+
+				<select name="1101212_461296pi_1101212_461296" id="1101212_461296pi_1101212_461296" class="select" onchange=""><option value="" selected="selected"></option>
+<option value="3523180">Yes</option>
+<option value="3523183">No</option>
+</select>
+				
+			</p>
+			<div id="error_for_1101212_461296pi_1101212_461296" style="display:none"></div>
+			
+		
+			<p class="form-field  Message pd-textarea required    ">
+				
+					<label class="field-label" for="1101212_491568pi_1101212_491568">Message</label>
+				
+
+				<textarea name="1101212_491568pi_1101212_491568" id="1101212_491568pi_1101212_491568" onchange="" cols="40" rows="10" class="standard"></textarea>
+				
+			</p>
+			<div id="error_for_1101212_491568pi_1101212_491568" style="display:none"></div>
+			
+		
+
+		
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field"/>
+	</p>
+		
+
+		<!-- forces IE5-8 to correctly submit UTF8 content  -->
+		<input name="_utf8" type="hidden" value="&#9731;" />
+
+		<p class="submit">
+			<input type="submit" accesskey="s" value="Submit" />
+		</p>
+	
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script>
+<input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value="" /></form>
+<script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-primary input, .form-field-primary select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script>
+
+            </div>
+
+        </div>
+
+        <a href="#" class="bounce-btn"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11rv/1101212/1773747702lG9UPzfZ/scroll_down_button.png" alt="Scroll-down"></a>
+
+    </section>
+
+
+    <section class="about-section">
+        <div class="about-container">
+
+            <!-- Left Content -->
+            <div class="about-content">
+            <h2>Why Sensible Matters</h2>
+            <p>
+                Salesforce can help a business stay ahead of the curve, but only when it’s designed to complement core business processes, not built around what’s comfortable to deliver.
+            </p>
+            <p>At Novabiz, we lead with a collaborative mindset. We bring perspective, challenge constructively, and design with clarity- operating as a true extension of your team. And after delivering dozens of successful projects, we know this is what creates lasting, measurable impact.</p>
+            <p>We help leaders cut through the noise, focus on what drives outcomes, and implement systems their teams naturally adopt.</p>
+
+             <a href="#" class="schedule_consultation">Schedule a Consultation</a>
+            
+            </div>
+
+            <!-- Right Cards -->
+            <div class="approach-wrapper">
+            <h3>Our Approach</h3>
+
+            <div class="approach-card">
+                <div class="icon">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11nv/1101212/17737476969N7rnIBI/innovate.png" alt="Innovate">
+                </div>
+                <div class="text">
+                <h4>Innovate</h4>
+                <p>create relevant solutions</p>
+                </div>
+            </div>
+
+            <div class="approach-card">
+                <div class="icon">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11sg/1101212/1773747703w6Ewr4uj/Transform.png" alt="Transform">
+                </div>
+                <div class="text">
+                <h4>Transform</h4>
+                <p>how work gets done</p>
+                </div>
+            </div>
+
+            <div class="approach-card">
+                <div class="icon">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11my/1101212/1773747694E4EfU3SP/Excel.png" alt="Excel">
+                </div>
+                <div class="text">
+                <h4>Excel</h4>
+                <p>stay ahead of the competition</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="experience-section">
+        <div class="experience-container">
+
+            <h2>Experience That Speaks for Itself</h2>
+
+            <p class="experience-desc">
+            As a Salesforce Consulting Partner and Managed Services Provider, Novabiz blends
+            enterprise-grade expertise with the efficiency and agility of a high-performing
+            offshore team
+            </p>
+
+            <div class="experience-grid">
+
+            <div class="exp-card">
+                <div class="icon"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11r5/1101212/17737477018zSylkZz/projects.png" alt=""></div>
+                <h3>30+ Successful<br>Projects</h3>
+            </div>
+
+            <div class="exp-card">
+                <div class="icon"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11ly/1101212/1773747692qclCJ9By/CSAT.png" alt=""></div>
+                <h3>5/5<br>CSAT</h3>
+            </div>
+
+            <div class="exp-card">
+                <div class="icon"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11m2/1101212/1773747692ZDqpaAhg/customers.png" alt=""></div>
+                <h3>95% Customer<br>Retention</h3>
+            </div>
+
+            <div class="exp-card">
+                <div class="icon"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11py/1101212/17737476999Kok8LSa/multidomain.png" alt=""></div>
+                <h3>Multi-Domain<br>Expertise</h3>
+            </div>
+
+            <div class="exp-card">
+                <div class="icon"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11lv/1101212/1773747691QrRWuHpp/certified.png" alt=""></div>
+                <h3>35+ Certified<br>Resources</h3>
+            </div>
+
+            <div class="exp-card">
+                <div class="icon"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11qk/1101212/1773747700zRR3Wn7J/offshore.png" alt=""></div>
+                <h3>Offshore<br>Delivery</h3>
+            </div>
+
+            </div>
+
+            <a href="#" class="experience-btn">Schedule a Consultation</a>
+
+        </div>
+    </section>
+
+
+    <section class="tech-expertise">
+        <div class="tech-container">
+
+            <h2>Salesforce Technology Expertise</h2>
+            <p class="tech-subtitle">
+            Our expertise spans across multiple Salesforce products
+            </p>
+
+            <div class="tech-grid">
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11lg/1101212/1773747691w1ELz3nS/agent_force.png" alt="">
+                <span>Agentforce</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11m8/1101212/1773747693J6qbJ3d7/data_cloud.png" alt="">
+                <span>Data<br>Cloud</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11r8/1101212/1773747701zYK2rthE/sales_cloud.png" alt="">
+                <span>Sales<br>Cloud</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11ry/1101212/1773747702C38Zd73H/service_cloud.png" alt="">
+                <span>Service<br>Cloud</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11pr/1101212/1773747698jlQhCILf/marketing_cloud.png" alt="">
+                <span>Marketing<br>Cloud</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11nk/1101212/1773747696iPbnooJ8/health_cloud.png" alt="">
+                <span>Health<br>Cloud</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11mn/1101212/1773747693cAObTdd0/enable_fintech.png" alt="">
+                <span>Financial<br>Services Cloud</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11n5/1101212/1773747694TLaBMLSQ/field_servicing_cloud.png" alt="">
+                <span>Field Service<br>Lightning</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11n2/1101212/1773747694w326t6Ij/experience_cloud.png" alt="">
+                <span>Experience<br>Cloud</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11p8/1101212/1773747697e5HsRCKo/lighting_cloud.png" alt="">
+                <span>Lightning<br>Platform</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11s8/1101212/1773747703ULsMJtRI/tableau.png" alt="">
+                <span>Tableau</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11q2/1101212/1773747699CSK25vsB/mule_soft.png" alt="">
+                <span>MuleSoft</span>
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="integration-section">
+        <div class="integration-container">
+
+            <h2>Integration Expertise</h2>
+            <p class="integration-subtitle">
+            We architect Salesforce to fit seamlessly within your technology landscape
+            </p>
+
+            <div class="integration-grid">
+
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11rr/1101212/1773747702Yzw12e2f/sap_hana.png" alt="SAP S/4 HANA"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11ln/1101212/177374769169Z6E4tu/avaya.png" alt="Avaya"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11q8/1101212/17737476994qVJbGiG/netsuite.png" alt="NetSuite"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11pv/1101212/1773747698gBsYF6NK/microsoft_b_centra.png" alt="Microsoft Dynamics 365"></div>
+
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11rn/1101212/1773747702NphdKTV6/sap_business_one.png" alt="SAP Business One"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11rc/1101212/1773747701iAaGJiyH/ring_central.png" alt="RingCentral"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11sr/1101212/1773747704ypmnl9wN/zoom_info.png" alt="ZoomInfo"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11qv/1101212/1773747700bPTQHiY0/outlook.png" alt="Outlook"></div>
+
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11q5/1101212/1773747699vUfeSTJ2/navitaire.png" alt="Navitaire"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11qg/1101212/17737476998TLFtVaO/office_365.png" alt="Office 365"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11pc/1101212/1773747697WcS0P2LQ/linkedin_sales.png" alt="LinkedIn Sales Navigator"></div>
+            <div class="integration-item"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11nc/1101212/1773747695NwoZWp76/google_workspace.png" alt="Google Workspace"></div>
+
+            <div class="integration-item alignment-class"></div>
+            
+      
+
+            </div>
+
+            <a href="#" class="integration-btn">and Much More</a>
+
+        </div>
+    </section>
+
+
+    <section class="customers-section">
+        <div class="container">
+
+            <h2 class="section-title">Our Global Customers</h2>
+
+            <div class="glide customers-slider">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+
+                <!-- Slide 1 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Technology</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11sk/1101212/1773747704waeiUVHp/truecaller.png" alt="Truecaller">
+                    </div>
+                </li>
+
+                <!-- Slide 2 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Healthcare</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11lr/1101212/1773747691ZEsvzvzu/beacon.png" alt="Beacon Health">
+                    </div>
+                </li>
+
+                <!-- Slide 3 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Non-profits & Education</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11mv/1101212/17737476949qz8kUgH/every_special_child.png" alt="Every Special Child">
+                    </div>
+                </li>
+
+                <!-- Slide 4 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Cyber Security</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11mk/1101212/1773747693FsDABnG9/doverunner.png" alt="Doverunner">
+                    </div>
+                </li>
+
+                <!-- Slide 5 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Travel & Transport</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11p2/1101212/1773747697etjZii3r/jazeera.png" alt="Jazeera Airways">
+                    </div>
+                </li>
+
+                <!-- Slide 6 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Retail & Consumer Goods</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11qr/1101212/177374770094YAZGB3/orra.png" alt="Orra Jewellery">
+                    </div>
+                </li>
+
+                <!-- Slide 7 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Fintech</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11kn/1101212/1773743119zdGjOn2T/Easebuzz.png" alt="Easebuzz">
+                    </div>
+                </li>
+
+                <!-- Slide 8 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Fintech</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11qy/1101212/1773747701jU8UCNa0/pluang.png" alt="Pluang">
+                    </div>
+                </li>
+
+                <!-- Slide 9 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Law Firm</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11m5/1101212/1773747693M7HKD1on/cycril.png" alt="Cycril Amarchand Mangaldas">
+                    </div>
+                </li>
+
+                <!-- Slide 10 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Staffing & Recruitments</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11ng/1101212/1773747695zbK36bzb/Harjai_computers.png" alt="Harjai Computers">
+                    </div>
+                </li>
+
+                <!-- Slide 11 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Chemical Manufacturing</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11l5/1101212/1773746729RR4cprs9/Aarti_.png" alt="Aarti Surfactants Limited">
+                    </div>
+                </li>
+
+                <!-- Slide 12 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Paper Manufacturing</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11r2/1101212/1773747701tK8foAUG/paper_manufacturer.png" alt="Paper Manufacturing">
+                    </div>
+                </li>
+
+                <!-- Slide 13 -->
+                <li class="glide__slide">
+                    <div class="customer-group">
+                    <span class="category">Plastic Manufacturing</span>
+                    <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11p5/1101212/1773747697qGEsYfqN/kppl.png" alt="KPPL">
+                    </div>
+                </li>
+
+                </ul>
+            </div>
+
+            <!-- Dots -->
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=5"></button>
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="engage-section">
+        <div class="container">
+
+            <h2 class="section-title">Ways To Engage</h2>
+            <p class="section-subtitle">
+            Whether you’re looking to implement a complete Salesforce solution, enhance existing systems,
+            or access specialized expertise, we offer flexible engagement models to suit your needs
+            </p>
+
+            <div class="engage-grid">
+            <div class="engage-card">
+                <div class="icon-box"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11sn/1101212/17737477047tWdzYQr/Turkey_project_delivery.png" alt="Turnkey Project Delivery"></div>
+                <h3>Turnkey<br>Project Delivery</h3>
+            </div>
+
+            <div class="engage-card">
+                <div class="icon-box"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11pg/1101212/1773747697kelqLZEI/managed_services.png" alt="Managed Services"></div>
+                <h3>Managed<br>Services</h3>
+            </div>
+
+            <div class="engage-card">
+                <div class="icon-box"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11qn/1101212/1773747700jgYGBE63/org_migration.png" alt="org Migration"></div>
+                <h3>Org<br>Migration</h3>
+            </div>
+
+            <div class="engage-card">
+                <div class="icon-box"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11s2/1101212/1773747702pZL66Ldm/staff_augmentation.png" alt="Staff Augmentation"></div>
+                <h3>Staff<br>Augmentation</h3>
+            </div>
+
+            <div class="engage-card">
+                <div class="icon-box"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11s5/1101212/1773747703aPdTYDob/system_integration.png" alt="System Integration"></div>
+                <h3>System<br>Integrations</h3>
+            </div>
+
+            <div class="engage-card">
+                <div class="icon-box"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11l8/1101212/1773747690Dbr1oLWm/Advisory_consulting.png" alt="Advisory & Consulting"></div>
+                <h3>Advisory &<br>Consulting</h3>
+            </div>
+            </div>
+
+            <div class="cta-wrapper">
+            <a href="#" class="cta-btn">Schedule a Consultation</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="delivery-section">
+        <div class="delivery-container">
+
+            <h2>A Smarter Global Delivery Model</h2>
+            <p class="delivery-desc">
+            We leverage our delivery hub in India to provide enterprise-grade Salesforce
+            consulting at a fraction of typical project costs. For our clients, this means
+            the same precision and quality you’d expect from a large global SI, combined
+            with leaner processes, shorter delivery cycles, and personalized engagement.
+            </p>
+
+            <!-- Delivery Model Card -->
+            <div class="delivery-card">
+
+            <div class="delivery-item">
+                <h4>Fully Offshore / Remote</h4>
+                <p>
+                Entire delivery managed from our India hub—efficient, cost-effective,
+                and fully coordinated with your team.
+                </p>
+            </div>
+
+            <div class="delivery-item">
+                <h4>Time &amp; Material Based</h4>
+                <p>
+                Flexible engagement options based on skills, efforts, and timelines.
+                </p>
+            </div>
+
+            <div class="delivery-item">
+                <h4>Onsite / Hybrid</h4>
+                <p>
+                Resources work alongside your team at your location or combine onsite
+                and remote for seamless collaboration.
+                </p>
+            </div>
+
+            <div class="delivery-item">
+                <h4>Flexible Team Pods</h4>
+                <p>
+                Dedicated multi-functional teams (developers, admins, consultants)
+                that scale up or down based on project demands.
+                </p>
+            </div>
+
+            </div>
+
+            <!-- Industries -->
+            <div class="industries">
+            <h3>Industries served</h3>
+            <p>We have demonstrated our expertise across the following industries</p>
+
+            <div class="industry-tags">
+                <span>Technology</span>
+                <span>Healthcare</span>
+                <span>Financial Services</span>
+                <span>Manufacturing</span>
+                <span>Real Estate</span>
+                <span>Retail &amp; Consumer Goods</span>
+                <span>Travel &amp; Transportation</span>
+                <span>Non-profit &amp; Education</span>
+            </div>
+
+
+                <div class="industry-tags glide" id="industrySlider">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                        <li class="glide__slide"><span>Technology</span></li>
+                        <li class="glide__slide"><span>Healthcare</span></li>
+                        <li class="glide__slide"><span>Financial Services</span></li>
+                        <li class="glide__slide"><span>Manufacturing</span></li>
+                        <li class="glide__slide"><span>Real Estate</span></li>
+                        <li class="glide__slide"><span>Retail &amp; Consumer Goods</span></li>
+                        <li class="glide__slide"><span>Travel &amp; Transportation</span></li>
+                        <li class="glide__slide"><span>Non-profit &amp; Education</span></li>
+                        </ul>
+                    </div>
+
+                            <!-- Dots -->
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=5"></button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="delivery-btn">Schedule a Consultation</a>
+
+        </div>
+    </section>
+
+
+
+    <section class="outcomes-section">
+        <div class="outcomes-container">
+
+            <h2>Proven Outcomes</h2>
+            <p class="outcomes-subtitle">
+           From startups to large enterprises, clients rely on Novabiz<br>to deliver
+            impactful solutions with measurable value.
+            </p>
+
+            <div class="outcomes-grid">
+
+            <div class="outcome-card">
+                <div class="icon">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11mn/1101212/1773747693cAObTdd0/enable_fintech.png" alt="">
+                </div>
+                <p>
+                <strong>Enabled a fintech</strong> payments gateway company to reduce
+                merchant onboarding time by 40%, while implementing a compliant customer
+                service framework aligned with regulatory resolution timelines.
+                </p>
+            </div>
+
+            <div class="outcome-card">
+                <div class="icon">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11pn/1101212/1773747698GWiz3b8i/manufacturer.png" alt="">
+                </div>
+                <p>
+                <strong>A Manufacturer</strong> gained complete visibility and control
+                over primary and secondary sales, distributor relationships, inventory,
+                and forecasting—enabling faster, data-driven decisions and scalable growth.
+                </p>
+            </div>
+
+            <div class="outcome-card">
+                <div class="icon">
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11lk/1101212/1773747691eRCKPk2T/an_airline.png" alt="">
+                </div>
+                <p>
+                <strong>An airline</strong> reduced call volumes by 53% using AI-powered
+                agents and automated responses tailored to customer relationships,
+                case types, and priorities.
+                </p>
+            </div>
+
+            </div>
+
+            <!-- <p class="outcomes-footer">
+            From startups to large enterprises, clients rely on Novabiz to deliver
+            impactful solutions with measurable value.
+            </p> -->
+
+        </div>
+    </section>
+
+
+    <section class="salesforce-cta">
+        <div class="cta-container">
+
+            <h2>
+            Salesforce services don't have to be<br>
+            costly or complicated to deliver results
+            </h2>
+
+            <p class="cta-subtitle">
+            We help ambitious businesses build scalable, adoptable, and efficient
+            Salesforce systems, with solutions that make business sense, not just
+            technical sense.
+            </p>
+            <hr>
+            <p class="cta-highlight">
+            Simplified. Scalable. Sensible. That's how Novabiz delivers Salesforce.
+            </p>
+
+            <a href="#" class="cta-button">Schedule a Consultation</a>
+
+        </div>
+    </section>
+
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Top footer -->
+            <div class="footer-top">
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                <li><a href="https://tinyurl.com/thc8jxar" target="_blank">Privacy Policy</a></li>
+                <li><a href="https://novabiz.co.in/case-studies/" target="_blank">Case Studies</a></li>
+                </ul>
+
+                <a href="https://in.linkedin.com/company/novabiz" target="_blank"  class="linkedin-icon" aria-label="LinkedIn">
+                in
+                </a>
+            </div>
+
+            <!-- Presence -->
+            <div class="footer-col">
+                <h4>Our presence</h4>
+                <p>Headquarters - 10th Floor, Tower 4, WeWork, NESCO IT Park, Western Express Highway, Goregaon (E), Mumbai, Maharashtra 400063</p>
+                <p>Delivery Center - Pune, India</p>
+            </div>
+
+            <!-- Partner badge -->
+            <div class="footer-col footer-partner">
+                <div class="novabiz-badge">
+                <!-- Replace with actual image -->
+                <a href="https://novabiz.co.in/" target="_blank"><img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11qc/1101212/1773747699aImsSRVR/Novabiz.png" alt="Novabiz"></a>
+                </div>
+
+                <div class="partner-badge">
+                <!-- Replace with actual image -->
+                <img src="https://go.marketing-novabiz.co.in/l/1101212/2026-03-17/gh11rk/1101212/1773747702ZrMOOzSl/salesforce_partner.png" alt="Salesforce Partner">
+                </div>
+            </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer-divider"></div>
+
+            <!-- Bottom footer -->
+            <div class="footer-bottom">
+            <p>
+                © 2026 Novabiz Consulting. All rights reserved.
+            </p>
+            <p class="footer-note">
+                By submitting this form, you agree to receive communications from Novabiz.
+            </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+        new Glide('.customers-slider', {
+            type: 'carousel',
+            perView: 5,
+            gap: 30,
+            autoplay: 1000,
+            hoverpause: true,
+            breakpoints: {
+            1024: { perView: 3 },
+            768: { perView: 2 },
+            480: { perView: 1 }
+            }
+        }).mount();
+
+
+        
+        if (window.innerWidth <= 768) {
+            new Glide('#industrySlider', {
+            type: 'carousel',
+            perView: 1,
+            gap: 30,
+            autoplay: 1500,
+            hoverpause: true,
+            breakpoints: {
+            768: { perView: 1 },
+            480: { perView: 1 }
+            },
+            peek: {
+                before: 0,
+                after: 100
+            }
+
+            }).mount();
+        }
+
+        
+       
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const form = document.querySelector("form");
+
+            const textFields = document.querySelectorAll(".textOnly");
+            const emailField = document.querySelector("input[name='email']");
+            const phoneField = document.querySelector("input[name='phone']");
+
+            // Regex patterns
+            const textPattern = /^[A-Za-z\s]+$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^[0-9]{10}$/;
+
+            form.addEventListener("submit", function (e) {
+
+                let isValid = true;
+
+                // ✅ Text Only Validation
+                textFields.forEach(function (field) {
+                    if (!textPattern.test(field.value.trim())) {
+                        alert(field.placeholder + " should contain only letters.");
+                        field.focus();
+                        isValid = false;
+                    }
+                });
+
+                textFields.forEach(function (field) {
+                    field.addEventListener("input", function () {
+                        this.value = this.value.replace(/[^A-Za-z\s]/g, "");
+                    });
+                });
+
+                // ✅ Email Validation
+                if (!emailPattern.test(emailField.value.trim())) {
+                    alert("Please enter a valid email address.");
+                    emailField.focus();
+                    isValid = false;
+                }
+
+                // ✅ Phone Validation
+                if (!phonePattern.test(phoneField.value.trim())) {
+                    alert("Phone number must be exactly 10 digits and numbers only.");
+                    phoneField.focus();
+                    isValid = false;
+                }
+
+                if (!isValid) {
+                    e.preventDefault();
+                }
+            });
+
+        });
+
+
+
+
+    </script>
+
+
+  
+
+
+</body>
+</html>
