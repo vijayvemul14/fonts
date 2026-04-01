@@ -2912,7 +2912,10 @@ form.form p label { color: #000000; }
 
 
         
-        if (window.innerWidth <= 768) {
+        let glide;
+
+        function initGlide() {
+        if (window.innerWidth <= 768 && !glide) {
             new Glide('#industrySlider', {
             type: 'carousel',
             perView: 1,
@@ -2929,8 +2932,14 @@ form.form p label { color: #000000; }
             }
 
             }).mount();
+        }else if (window.innerWidth > 768 && glide) {
+            glide.destroy();
+            glide = null;
+        }
         }
 
+        window.addEventListener('load', initGlide);
+        window.addEventListener('resize', initGlide);
         
        
         document.addEventListener("DOMContentLoaded", function () {
