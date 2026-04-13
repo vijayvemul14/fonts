@@ -2919,10 +2919,7 @@ form.form p label { color: #000000; }
 
 
         
-        let glide;
-
-        function initGlide() {
-        if (window.innerWidth <= 768 && !glide) {
+        
             new Glide('#industrySlider', {
             type: 'carousel',
             perView: 1,
@@ -2932,18 +2929,9 @@ form.form p label { color: #000000; }
             breakpoints: {
             768: { perView: 1 },
             480: { perView: 1 }
-            },
-            peek: {
-                before: 0,
-                after: 0
             }
-
             }).mount(300);
-        }else if (window.innerWidth > 768 && glide) {
-            glide.destroy();
-            glide = null;
-        }
-        }
+        
 
         window.addEventListener('load', initGlide);
         window.addEventListener('resize', initGlide);
