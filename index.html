@@ -2272,7 +2272,27 @@ form.form p label { color: #000000; }
 //]]>
 
 
+const emailInput = document.getElementById("1101212_461290pi_1101212_461290");
 
+emailInput.addEventListener("blur", function () {
+  let error = this.nextElementSibling;
+
+  if (!error || !error.classList.contains("error-msg")) {
+    error = document.createElement("span");
+    error.className = "error-msg";
+    error.style.color = "red";
+    this.parentNode.appendChild(error);
+  }
+
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!regex.test(this.value.trim())) {
+    error.textContent = "Enter a valid email address";
+  } else {
+    error.textContent = "";
+  }
+});
+	
 	document.addEventListener("DOMContentLoaded", function () {
   const phoneInput = document.getElementById("1101212_461305pi_1101212_461305");
 
