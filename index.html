@@ -2272,25 +2272,35 @@ form.form p label { color: #000000; }
 //]]>
 
 
-const emailInput = document.getElementById("1101212_461290pi_1101212_461290");
+document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("1101212_461290pi_1101212_461290");
 
-emailInput.addEventListener("blur", function () {
-  let error = this.nextElementSibling;
+  const blockedDomains = [
+    "gmail.com",
+    "yahoo.com",
+    "hotmail.com",
+    "outlook.com",
+    "rediffmail.com",
+    "icloud.com"
+  ];
 
-  if (!error || !error.classList.contains("error-msg")) {
-    error = document.createElement("span");
-    error.className = "error-msg";
-    error.style.color = "red";
-    this.parentNode.appendChild(error);
-  }
+  emailInput.addEventListener("blur", function () {
+    const value = this.value.trim().toLowerCase();
 
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!regex.test(this.value.trim())) {
-    error.textContent = "Enter a valid email address";
-  } else {
-    error.textContent = "";
-  }
+    if (!emailRegex.test(value)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    const domain = value.split("@")[1];
+
+    if (blockedDomains.includes(domain)) {
+      alert("Please use your company email (no Gmail/Yahoo allowed)");
+      this.value = "";
+    }
+  });
 });
 	
 	document.addEventListener("DOMContentLoaded", function () {
