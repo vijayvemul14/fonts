@@ -2271,8 +2271,9 @@ form.form p label { color: #000000; }
 		
 //]]>
 
-
 document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("pardot-form");
+  const phoneInput = document.getElementById("1101212_461305pi_1101212_461305");
   const emailInput = document.getElementById("1101212_461290pi_1101212_461290");
 
   const blockedDomains = [
@@ -2284,42 +2285,60 @@ document.addEventListener("DOMContentLoaded", function () {
     "icloud.com"
   ];
 
-  emailInput.addEventListener("blur", function () {
-    const value = this.value.trim().toLowerCase();
+  // Allow only numbers for phone
+  phoneInput.addEventListener("input", function () {
+    this.value = this.value.replace(/\D/g, "").slice(0, 10);
+  });
 
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // 🚀 stop default redirect
+
+    // ✅ Phone validation
+    const phoneValue = phoneInput.value.trim();
+    if (phoneValue.length !== 10) {
+      alert("Please enter a valid 10-digit phone number");
+      phoneInput.focus();
+      return;
+    }
+
+    // ✅ Email validation
+    const emailValue = emailInput.value.trim().toLowerCase();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emailRegex.test(value)) {
+    if (!emailRegex.test(emailValue)) {
       alert("Please enter a valid email address");
       return;
     }
 
-    const domain = value.split("@")[1];
-
+    const domain = emailValue.split("@")[1];
     if (blockedDomains.includes(domain)) {
-      alert("Please use your company email (no Gmail/Yahoo allowed)");
-      this.value = "";
+      alert("Please provide your company's email");
+      return;
     }
-  });
-});
-	
-	document.addEventListener("DOMContentLoaded", function () {
-  const phoneInput = document.getElementById("1101212_461305pi_1101212_461305");
 
-  phoneInput.addEventListener("input", function () {
-    // Remove non-numeric characters
-    this.value = this.value.replace(/\D/g, "");
+    // 🚀 Submit to Pardot (background)
+    const formData = new FormData(form);
 
-    // Limit to 10 digits
-    if (this.value.length > 10) {
-      this.value = this.value.slice(0, 10);
-    }
-  });
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      mode: "no-cors"
+    })
+    .then(() => {
+      // Hide form
+      form.style.display = "none";
 
-  phoneInput.addEventListener("blur", function () {
-    if (this.value.length !== 10) {
-      alert("Please enter a valid 10-digit phone number");
-    }
+      // Show thank you block
+      document.getElementById("thank-you-message").style.display = "block";
+
+      // Optional: scroll to message
+      document.getElementById("thank-you-message").scrollIntoView({
+        behavior: "smooth"
+      });
+    })
+    .catch(() => {
+      alert("Something went wrong. Please try again.");
+    });
   });
 });
 	
