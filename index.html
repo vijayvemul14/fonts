@@ -2270,6 +2270,29 @@ form.form p label { color: #000000; }
 	}
 		
 //]]>
+
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+  const phoneInput = document.getElementById("1101212_461305pi_1101212_461305");
+
+  phoneInput.addEventListener("input", function () {
+    // Remove non-numeric characters
+    this.value = this.value.replace(/\D/g, "");
+
+    // Limit to 10 digits
+    if (this.value.length > 10) {
+      this.value = this.value.slice(0, 10);
+    }
+  });
+
+  phoneInput.addEventListener("blur", function () {
+    if (this.value.length !== 10) {
+      alert("Please enter a valid 10-digit phone number");
+    }
+  });
+});
+	
 </script>
 <input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value="" /></form>
 <script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
